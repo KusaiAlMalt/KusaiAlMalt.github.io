@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const profilePic = document.querySelector('.profile-pic');
     if (!profilePic) return;
 
-    const originalSrc = 'assets/profile_pic.jpg';
-    const hoverSrc = 'assets/profile_pic_on_hover.jpg';
+    const originalPic = 'assets/profile_pic.jpg';
+    const hoverPic = 'assets/profile_pic_on_hover.jpg';
 
     profilePic.addEventListener('mouseenter', function () {
-        profilePic.src = hoverSrc;
+        profilePic.src = hoverPic;
     });
 
     profilePic.addEventListener('mouseleave', function () {
-        profilePic.src = originalSrc;
+        profilePic.src = originalPic;
     });
 });
