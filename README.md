@@ -1,3 +1,4 @@
 # KusaiAlMalt.github.io
 Welcome to my Portfolio
-Work in progress ...
+
+*Site is under construction ...*
