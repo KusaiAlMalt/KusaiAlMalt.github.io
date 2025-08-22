@@ -6,6 +6,14 @@ body {
   cursor: default;
 }
 
+.page{
+  display: none;
+}
+
+.page.active{
+  display: block;
+}
+
 .content-container{
   height: 100vh;
   display: flex;
@@ -24,6 +32,8 @@ body {
   color: silver;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
+
+/*----------------------------------Home----------------------------------*/
 
 .glass-card-content {
   padding: 40px;
@@ -65,13 +75,7 @@ body {
   opacity: 0.8;
 }
 
-.page{
-  display: none;
-}
-
-.page.active{
-  display: block;
-}
+/*----------------------------------Navigation----------------------------------*/
 
 .bottom-nav{
   position: fixed;
@@ -101,12 +105,12 @@ body {
   margin: 10px;
 }
 
-.navb.selected{
-  background : gray;
+.bottom-nav button:hover{
+  background: gray;
   border-radius: 1.2rem;
 }
 
-.bottom-nav button:hover{
-  background: gray;
+.navb.selected{
+  background : gray;
   border-radius: 1.2rem;
 }
