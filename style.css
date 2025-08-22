@@ -30,7 +30,7 @@ body {
 }
 
 .glass-card-header {
-  padding: 20px;
+  padding: 20px 20px 0px;
 }
 
 .glass-card-header > a {
