@@ -108,9 +108,11 @@ body {
 .bottom-nav button:hover{
   background: gray;
   border-radius: 1.2rem;
+  box-shadow: inset 0 4px 3px rgba(255, 255, 255, 0.3);
 }
 
-.navb.selected{
+.navb.selected, .navb.selected:hover, .bottom-nav button:active{
   background : gray;
   border-radius: 1.2rem;
+  box-shadow: inset 0 4px 3px rgba(0, 0, 0, 0.8);
 }
