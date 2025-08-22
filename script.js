@@ -19,8 +19,15 @@ function setupProfilePicHover() {
 }
 
 function showPage(pageId) {
-  document.querySelectorAll('.page').forEach(page => {
+    document.querySelectorAll('.page').forEach(page => {
     page.classList.remove('active');
-  });
-  document.getElementById(pageId).classList.add('active');
+    });
+    document.getElementById(pageId).classList.add('active');
+}
+
+function navSelection(pageId) {
+    document.querySelectorAll('.navb').forEach(btn => {
+    btn.classList.remove('selected');
+    });
+    document.getElementById(pageId).classList.add('selected');
 }
