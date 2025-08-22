@@ -60,3 +60,30 @@ body {
   font-size: 1rem;
   opacity: 0.8;
 }
+
+.page{
+  display: none;
+}
+
+.page.active{
+  display: block;
+}
+
+.bottom-nav{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+}
+
+.bottom-nav button{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
