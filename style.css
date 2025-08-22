@@ -87,7 +87,8 @@ body {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  padding: 15px;
+  padding: 0px;
+  border-radius: 25px;
 }
 
 .bottom-nav button{
@@ -96,5 +97,16 @@ body {
   color: silver;
   font-size: 1.2rem;
   cursor: pointer;
-  padding: 0px 20px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.navb.selected{
+  background : gray;
+  border-radius: 1.2rem;
+}
+
+.bottom-nav button:hover{
+  background: gray;
+  border-radius: 1.2rem;
 }
