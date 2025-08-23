@@ -43,8 +43,13 @@ body {
   padding: 20px 20px 0px;
 }
 
-.glass-card-header > a {
+.glass-card-header a {
   text-decoration: none;
+  color: black;
+}
+
+.glass-card-header > span:hover {
+  text-decoration: underline;
   color: black;
 }
 
@@ -54,7 +59,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
-  border: 2px solid white;
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .profile-pic:hover {
