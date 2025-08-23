@@ -6,6 +6,14 @@ body {
   cursor: default;
 }
 
+.page{
+  display: none;
+}
+
+.page.active{
+  display: block;
+}
+
 .content-container{
   height: 100vh;
   display: flex;
@@ -25,16 +33,23 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
+/*----------------------------------Home----------------------------------*/
+
 .glass-card-content {
   padding: 40px;
 }
 
 .glass-card-header {
-  padding: 20px;
+  padding: 20px 20px 0px;
 }
 
-.glass-card-header > a {
+.glass-card-header a {
   text-decoration: none;
+  color: black;
+}
+
+.glass-card-header > span:hover {
+  text-decoration: underline;
   color: black;
 }
 
@@ -44,11 +59,15 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
-  border: 2px solid white;
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .profile-pic:hover {
   transform: scale(1.1);
+}
+
+.profile-pic:active{
+  transform: scale(1.3)
 }
 
 .name {
@@ -59,4 +78,55 @@ body {
 .title {
   font-size: 1rem;
   opacity: 0.8;
+}
+
+.personal-links{
+  padding-top: 20px;
+}
+
+.personal-links a{
+  margin: 0 10px;
+}
+
+/*----------------------------------Navigation----------------------------------*/
+
+.bottom-nav{
+  position: fixed;
+  bottom: 3%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.bottom-nav > div{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0px;
+  border-radius: 25px;
+}
+
+.bottom-nav button{
+  background: none;
+  border: none;
+  color: silver;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.bottom-nav button:hover{
+  background: gray;
+  border-radius: 1.2rem;
+  box-shadow: inset 0 4px 3px rgba(255, 255, 255, 0.3);
+}
+
+.navb.selected, .navb.selected:hover, .bottom-nav button:active{
+  background : gray;
+  border-radius: 1.2rem;
+  box-shadow: inset 0 4px 3px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
