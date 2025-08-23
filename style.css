@@ -75,6 +75,14 @@ body {
   opacity: 0.8;
 }
 
+.personal-links{
+  padding-top: 20px;
+}
+
+.personal-links a{
+  margin: 0 10px;
+}
+
 /*----------------------------------Navigation----------------------------------*/
 
 .bottom-nav{
