@@ -6,6 +6,15 @@ body {
   cursor: default;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 .page{
   display: none;
 }
@@ -33,6 +42,7 @@ body {
   color: silver;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge, and Firefox*/
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -57,7 +67,6 @@ body {
 /*----------------------------------Home----------------------------------*/
 
 .glass-card-header a {
-  text-decoration: none;
   color: black;
 }
 
@@ -100,6 +109,7 @@ body {
 #education p, h3{
   text-align: left;
 }
+
 #education img{
   float: right;
 }
@@ -119,7 +129,7 @@ body {
 .bottom-nav > div{
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Safari support */
   padding: 0px;
   border-radius: 25px;
 }
@@ -145,4 +155,20 @@ body {
   border-radius: 1.2rem;
   box-shadow: inset 0 4px 3px rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button img{
+  width: 50px;
+}
+
+@media screen and (max-width: 380px) {  
+  button img {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {  
+  button img {
+    width: 30px;
+  }
 }
