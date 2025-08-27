@@ -75,6 +75,14 @@ a:hover{
   color: black;
 }
 
+.glass-card-header > span img {
+  transition: 1s;
+}
+
+.glass-card-header > span img:hover {
+  transform: scale(1.2);
+}
+
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -82,6 +90,7 @@ a:hover{
   object-fit: cover;
   margin-bottom: 16px;
   border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: 1s;
 }
 
 .profile-pic:hover {
@@ -104,6 +113,14 @@ a:hover{
 .personal-links a{
   margin: 0 10px;
 }
+.personal-links a img{
+  transition: 1s;
+}
+.personal-links a img:hover{
+  transform: scale(1.2);
+}
+
+
 
 /*----------------------------------Education----------------------------------*/
 #education p, h3{
@@ -112,7 +129,13 @@ a:hover{
 
 #education img{
   float: right;
+  transition: 0.5s;
 }
+#education img:hover{
+  transform: scale(1.2);
+}
+
+
 
 /*----------------------------------Navigation----------------------------------*/
 
@@ -137,16 +160,17 @@ a:hover{
 .bottom-nav button{
   background: none;
   border: none;
+  border-radius: 1.2rem;
   color: silver;
   font-size: 1.2rem;
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px;
+  transition: 0.5s;
 }
 
 .bottom-nav button:hover{
   background: gray;
-  border-radius: 1.2rem;
   box-shadow: inset 0 4px 3px rgba(255, 255, 255, 0.3);
 }
 
@@ -155,6 +179,7 @@ a:hover{
   border-radius: 1.2rem;
   box-shadow: inset 0 4px 3px rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
 }
 
 button img{
