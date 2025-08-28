@@ -31,3 +31,15 @@ function navSelection(pageId) {
     });
     document.getElementById(pageId).classList.add('selected');
 }
+
+function expToggle(pageId){
+    document.querySelectorAll('.tab').forEach(tab => {
+    tab.classList.remove('chosen');
+    });
+    document.getElementById(pageId).classList.add('chosen');
+
+    document.querySelectorAll('.exp').forEach(exp => {
+    exp.classList.remove('shown');
+    });
+    document.getElementById("exp"+pageId).classList.add('shown');
+}
