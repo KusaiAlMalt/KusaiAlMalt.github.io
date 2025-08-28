@@ -77,11 +77,16 @@ a:hover{
 
 .work-project h1{
   display: inline;
-  cursor: pointer;
 }
 
 .tab{
   color: inherit;
+  transition: 0.15s ease-in;
+  cursor: pointer;
+}
+
+.tab:hover{
+  color: snow;
 }
 
 .tab.chosen{
