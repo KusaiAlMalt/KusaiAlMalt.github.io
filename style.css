@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: url('assets/aurora.jpg') no-repeat center center fixed;
+  background: url('assets/aurora2.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: sans-serif;
   cursor: default;
@@ -159,16 +159,16 @@ a:hover{
 
 
 
-/*----------------------------------Education----------------------------------*/
-#education p, h3{
+/*----------------------------------Education & Work----------------------------------*/
+#education p, h3, #expwork p, h3{
   text-align: left;
 }
 
-#education img{
+#education img, #expwork img{
   float: right;
   transition: 0.5s;
 }
-#education img:hover{
+#education img:hover, #expwork img:hover{
   transform: scale(1.2);
 }
 
@@ -180,10 +180,10 @@ a:hover{
   position: fixed;
   bottom: 3%;
   left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
 }
 
 .bottom-nav > div{
