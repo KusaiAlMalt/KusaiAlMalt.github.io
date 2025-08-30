@@ -223,15 +223,21 @@ button img{
   width: 50px;
 }
 
+@media screen and (max-width: 425px){
+  button img{
+    width: 40px;
+  }
+}
+
 @media screen and (max-width: 380px) {  
   button img {
-    width: 40px;
+    width: 30px;
   }
 }
 
 @media screen and (max-width: 350px) {  
   button img {
-    width: 30px;
+    width: 25px;
   }
 }
 
