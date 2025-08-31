@@ -167,6 +167,7 @@ a:hover{
 #education img, #expwork img{
   float: right;
   transition: 0.5s;
+  max-width: 100px;
 }
 #education img:hover, #expwork img:hover{
   transform: scale(1.2);
