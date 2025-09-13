@@ -101,21 +101,28 @@ a:hover{
   display: block;
 }
 
-.projects-grid{
-  display: grid;
-  justify-content: space-around;
-  align-items: center;
-  justify-items: center;
-  padding: 0px;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(auto, auto);
+
+/*----------------------------------Projects----------------------------------*/
+.project-box{
+  display: flex;
 }
 
-.projects-grid .glass-card{
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(100%);
-  -webkit-backdrop-filter: blur(100%); /* Safari support */
-  border-radius: 5px;
+.project-content{
+  width: 70%;
+  text-align: left;
+}
+.project-icons{
+  width: 30%;
+}
+.project-picture{
+  height: 70%;
+}
+.project-picture img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.project-tech{
+  height: 30%;
 }
 
 /*----------------------------------Home----------------------------------*/
@@ -245,9 +252,6 @@ button img{
   button img{
     width: 40px;
   }
-  .projects-grid{
-  grid-template-columns: repeat(1, 100%);
-}
 }
 
 @media screen and (max-width: 380px) {  
