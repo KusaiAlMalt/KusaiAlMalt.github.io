@@ -124,6 +124,13 @@ a:hover{
 .project-tech{
   height: 30%;
 }
+
+.repo-link{
+  transition: 1s;
+}
+.repo-link:hover{
+  transform: scale(1.1);
+}
 /*----------------------------------Home----------------------------------*/
 
 .glass-card-header a {
