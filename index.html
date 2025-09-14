@@ -4,12 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kusai Al Malt</title>
+    <link rel="icon" type= "image/png" href="assets/icons/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="experience" class="page">
+        <div class="content-container">
+            <div class="glass-card">
+                <div class="glass-card-header">
+                    <div class="work-project">
+                        <h1 class="tab chosen" id="work" onclick="expToggle('work')">Work</h1>&nbsp
+                        <h1> | </h1>&nbsp
+                        <h1 class="tab" id="projects" onclick="expToggle('projects')">Projects</h1>
+                    </div>
+                    <hr>
+                </div>
+                <div class="glass-card-content">
 
+                    <div class="exp shown" id="expwork">
+                        <!--
+                        <div>
+                            <a href="https://www.ikea.com/" target="_blank"><img src="assets/icons/Ikea_logo.svg" alt="IKEA logo" width="30%"></a>
+                            <h3>IKEA X Chalmers University of Technology</h3>
+                            <hr>
+                            <p><strong>Industry Collabortaion with IKEA</strong> (Read more)</p>
+                            <p>Gothenburg</p>
+                            <p>Aug. 2025 - Nov. 2025</p>
+                        </div>
+                        -->
+                        <div>
+                            <a href="https://www.gu.se/" target="_blank"><img src="assets/icons/GoteborgsUniversitet.svg" alt="Goteborgs Universitet logo" width="30%"></a>
+                            <h3>University of Gothenburg</h3>
+                            <hr>
+                            <p><strong>Amanuens (Teaching Assistent)</strong></p>
+                            <p>Gothenburg</p>
+                            <p>Aug. 2025 - Jun. 2026</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <a href="https://chalmers.se" target="_blank"><img src="assets/icons/chalmers.svg" alt="Chalmers logo" width="30%"></a>
+                            <h3>Chalmers University of Technology</h3>
+                            <hr>
+                            <p><strong>Amanuens (Teaching Assistent)</strong></p>
+                            <p>Gothenburg</p>
+                            <p>Jan. 2024 - Jun. 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="exp" id="expprojects">
+                        
+                        <div class="project-box">
+                            <div class="project-content">
+                                <h1>Net Zero Calculator (NZC)</h1>
+                                <a href="https://github.com/KusaiAlMalt/Net-Zero-Calculator" target="_blank">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/Repo-gray?logo=GitHub" class="repo-link">
+                                </a>
+                                <p>The Net Zero Calculator is an AI-powered solution that provides your company with early estimation of what it takes to offset your organization's carbon footprint. We analyze your day-to-day emissions and connect you with verified carbon capture projects worldwide, making sustainability both accessible and actionable.</p>
+                            </div>
+                            <div class="project-icons">
+                                <div class="project-picture">
+                                    <img src="assets/projects/NZC2.png" alt="NZC">
+                                </div>
+                                <div class="project-tech">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/-FFFF00?logo=Python">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/-darkgreen?logo=django">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/-gray?logo=OpenAI">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/-%23150458?logo=pandas">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/-black?logo=javascript">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/-white?logo=html5">
+                                    <img alt="Static Badge" src="https://img.shields.io/badge/-darkblue?logo=CSS">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        
+
+                            
+                    </div>
+                </div>
+    
+            </div>
+        </div>
     </div>
 
     <div id="home" class="page active">
@@ -30,7 +107,7 @@
                     <img src="assets/profile_pic.jpg" title="👋" alt="My profile picture" class="profile-pic">
                     <h1 class="name">Kusai Al Malt</h1>
                     <p>MSc Engineering Student in IT at Chalmers University of Technology</p>
-                    <p>Cybersecurity & Software Dev Enthusiast & Details lover</p>
+                    <p>Cybersecurity & Software Dev Enthusiast & Details Lover & Problem Solver</p>
                 </div>
             </div>
         </div>
@@ -41,6 +118,7 @@
             <div class="glass-card">
                 <div class="glass-card-header">
                     <h1>Education</h1>
+                    <hr>
                 </div>
                 <div class="glass-card-content">
                     <div>
