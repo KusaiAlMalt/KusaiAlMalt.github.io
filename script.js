@@ -44,14 +44,20 @@ function expToggle(pageId){
     document.getElementById("exp"+pageId).classList.add('shown');
 }
 
-function openVideoModal() {
+function openVideoModal(videoPath) {
+    const video = document.getElementById('projectVideo');
+    video.pause();
+    video.currentTime = 0;
+    video.src = videoPath;
+    video.load();
     document.getElementById('videoModal').style.display = 'flex';
 }
+window.openVideoModal = openVideoModal;
+
 function closeVideoModal() {
     const video = document.getElementById('projectVideo');
     video.pause();
     video.currentTime = 0;
     document.getElementById('videoModal').style.display = 'none';
 }
-window.openVideoModal = openVideoModal;
 window.closeVideoModal = closeVideoModal;

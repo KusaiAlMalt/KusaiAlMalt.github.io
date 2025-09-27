@@ -63,7 +63,7 @@
                                     </div>
                                     <div class="button-text"><b>Source</b></div>
                                 </button>
-                                <button type="button" onclick="openVideoModal()">
+                                <button type="button" onclick="openVideoModal('assets/projects/demos/NZCdemo.mp4')">
                                     <div class="button-pic">
                                         <img src="assets/projects/video.png" alt="Video Demo">
                                     </div>
@@ -163,10 +163,7 @@
     <div id="videoModal" class="modal" style="display:none;">
     <div class="modal-content">
         <span class="close" onclick="closeVideoModal()">&times;</span>
-        <video id="projectVideo" controls style="width:100%;">
-        <source src="assets/projects/demos/NZCdemo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
+        <video id="projectVideo" controls preload="auto" style="width:100%;"></video>
     </div>
     </div>
 
