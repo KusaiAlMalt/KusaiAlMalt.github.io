@@ -106,7 +106,9 @@ a:hover{
 .project-box{
   display: flex;
 }
-
+.project-title{
+  margin-bottom: 16px;
+}
 .project-content{
   width: 70%;
   text-align: left;
@@ -123,6 +125,23 @@ a:hover{
 }
 .project-tech{
   height: 30%;
+}
+.project-content button{
+  width: 5.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-pic{
+  width: 30%;
+  height: 100%;
+}
+.button-pic img{
+  width: 1.1rem;
+}
+.button-text{
+  align-items: center;
 }
 
 .repo-link{
