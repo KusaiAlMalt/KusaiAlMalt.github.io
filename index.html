@@ -63,6 +63,12 @@
                                     </div>
                                     <div class="button-text"><b>Source</b></div>
                                 </button>
+                                <button type="button" onclick="openVideoModal()">
+                                    <div class="button-pic">
+                                        <img src="assets/projects/video.png" alt="Video Demo">
+                                    </div>
+                                    <div class="button-text"><b>Demo</b></div>
+                                </button>
                                 <p>The Net Zero Calculator is an AI-powered solution that provides your company with early estimation of what it takes to offset your organization's carbon footprint. We analyze your day-to-day emissions and connect you with verified carbon capture projects worldwide, making sustainability both accessible and actionable.</p>
                             </div>
                             <div class="project-icons">
@@ -153,6 +159,16 @@
             <button id="nav-education" class="navb" title="Education" onclick="showPage('education'); navSelection('nav-education')"><img src="assets/icons/paper.png" alt="climbing mountain"></button>
         </div>
     </nav>
+
+    <div id="videoModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeVideoModal()">&times;</span>
+        <video id="projectVideo" controls style="width:100%;">
+        <source src="assets/projects/demos/NZCdemo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

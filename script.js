@@ -43,3 +43,15 @@ function expToggle(pageId){
     });
     document.getElementById("exp"+pageId).classList.add('shown');
 }
+
+function openVideoModal() {
+    document.getElementById('videoModal').style.display = 'flex';
+}
+function closeVideoModal() {
+    const video = document.getElementById('projectVideo');
+    video.pause();
+    video.currentTime = 0;
+    document.getElementById('videoModal').style.display = 'none';
+}
+window.openVideoModal = openVideoModal;
+window.closeVideoModal = closeVideoModal;
