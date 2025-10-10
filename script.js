@@ -44,20 +44,21 @@ function expToggle(pageId){
     document.getElementById("exp"+pageId).classList.add('shown');
 }
 
-function openVideoModal(videoPath) {
-    const video = document.getElementById('projectVideo');
-    video.pause();
-    video.currentTime = 0;
-    video.src = videoPath;
-    video.load();
+function openVideoModal(youtubeUrl) {
+    const frame = document.getElementById('projectVideoFrame');
+    // Convert normal YouTube URL to embed format if needed
+    let embedUrl = youtubeUrl;
+    if (youtubeUrl.includes('watch?v=')) {
+        embedUrl = youtubeUrl.replace('watch?v=', 'embed/');
+    }
+    frame.src = embedUrl + '?autoplay=1';
     document.getElementById('videoModal').style.display = 'flex';
 }
 window.openVideoModal = openVideoModal;
 
 function closeVideoModal() {
-    const video = document.getElementById('projectVideo');
-    video.pause();
-    video.currentTime = 0;
+    const frame = document.getElementById('projectVideoFrame');
+    frame.src = '';
     document.getElementById('videoModal').style.display = 'none';
 }
 window.closeVideoModal = closeVideoModal;

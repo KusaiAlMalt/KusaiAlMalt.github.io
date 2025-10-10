@@ -73,7 +73,7 @@
                                     <div class="button-text"><b>Source</b></div>
                                 </button>
                                 
-                                <button type="button" onclick="openVideoModal('assets/projects/demos/NZCdemo.mp4')">
+                                <button type="button" onclick="openVideoModal('https://www.youtube.com/watch?v=MIpDiOdT0VE')">
                                     <div class="button-pic">
                                         <img src="assets/projects/video.png" alt="Video Demo">
                                     </div>
@@ -173,10 +173,12 @@
     </nav>
 
     <div id="videoModal" class="modal" style="display:none;">
-    <div class="modal-content">
+      <div class="modal-content">
         <span class="close" onclick="closeVideoModal()">&times;</span>
-        <video id="projectVideo" controls preload="auto" style="width:100%;"></video>
-    </div>
+        <iframe id="projectVideoFrame" width="100%" height="500" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
 
     <script src="script.js"></script>
