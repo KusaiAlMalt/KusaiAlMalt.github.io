@@ -121,6 +121,9 @@ a:hover{
   max-height: 100%;
 }
 .project-picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 70%;
 }
 .project-tech{
