@@ -1,8 +1,4 @@
-import { useState } from 'react'
-
 function Home() {
-  const [isProfileHovered, setIsProfileHovered] = useState(false)
-
   return (
     <section className="glass-card home-card" aria-labelledby="home-title">
       <div className="location">
@@ -11,7 +7,7 @@ function Home() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="/assets/icons/location.png" alt="" />
+          <img src="/assets/icons/location.png" alt="Location" />
           <span>Gothenburg</span>
         </a>
       </div>
@@ -23,7 +19,7 @@ function Home() {
           rel="noreferrer"
           aria-label="GitHub"
         >
-          <img src="/assets/icons/github.png" alt="" />
+          <img src="/assets/icons/github.png" alt="Github" />
         </a>
         <a
           href="https://se.linkedin.com/in/kusai-al-malt"
@@ -31,28 +27,28 @@ function Home() {
           rel="noreferrer"
           aria-label="LinkedIn"
         >
-          <img src="/assets/icons/linkedin.png" alt="" />
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn" />
         </a>
         <a href="mailto:kusai.malt@gmail.com" aria-label="Email">
-          <img src="/assets/icons/mail.png" alt="" />
+          <img src="/assets/icons/mail.png" alt="Email" />
         </a>
       </div>
 
       <div className="home-content">
         <img
           className="profile-pic"
-          src={
-            isProfileHovered
-              ? '/assets/profile_pic_on_hover.jpg'
-              : '/assets/profile_pic.jpg'
-          }
+          src={'/assets/profpic.png'}
           alt="Kusai Al Malt"
-          onMouseEnter={() => setIsProfileHovered(true)}
-          onMouseLeave={() => setIsProfileHovered(false)}
         />
         <h1 id="home-title">Kusai Al Malt</h1>
         <p>M.Sc. Computer Systems and Cybersecurity</p>
-        <p>Cybersecurity &amp; Software Dev Enthusiast &amp; Details Lover &amp; Problem Solver</p>
+        <a
+          href="https://www.chalmers.se/"
+          target="_blank"
+          aria-label="Chalmers"
+        >
+          @Chalmers University of Technology
+        </a>
       </div>
     </section>
   )
