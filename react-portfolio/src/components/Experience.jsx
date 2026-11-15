@@ -21,6 +21,34 @@ const jobs = [
 
 const projects = [
   {
+    title: 'Automated Teaching Assistant Allocation System (ATAAS)',
+    subtitle:
+      "Bachelor's thesis project at Chalmers University of Technology, focused on constraint-based optimization, full-stack development, and scheduling automation.",
+    description:
+      'ATAAS is a web-based scheduling system developed to improve teaching assistant allocation at Chalmers and the University of Gothenburg. It replaces manual, spreadsheet-based scheduling with an automated approach that considers teaching assistants’ availability, workload requirements, and personal preferences. Course responsibles can configure courses and sessions, while teaching assistants specify hard constraints and soft preferences. I contributed to both the frontend and backend, implementing scheduling functionality and evaluating two optimization approaches: Choco Solver with Large Neighborhood Search and Google OR-Tools CP-SAT combined with a greedy heuristic. Benchmarking across 13 scenarios demonstrated significant improvements in scheduling runtime and preference satisfaction, with one scenario reducing runtime from 18.2 seconds to 87 milliseconds while also reducing the scheduling penalty from 463 to 143. The project was evaluated through a survey of 40 teaching assistants, an interview with a course responsible, and usability interviews with four teaching assistants.',
+    technologies: [
+      'Java',
+      'Spring Boot',
+      'PostgreSQL',
+      'React',
+      'Vite',
+      'Tailwind CSS',
+      'Docker',
+      'JWT',
+      'Choco Solver',
+      'Google OR-Tools CP-SAT'
+    ],
+    image: '/assets/icons/chalmers.svg',
+    imageAlt: 'Chalmers',
+    links: [
+      {
+        label: "Bachelor's Thesis",
+        icon: '/assets/icons/paper.png',
+        href: 'https://odr.chalmers.se/items/12383c2a-7c7e-42a4-8bd3-6a98ad425366',
+      },
+    ],
+  },
+  {
     title: 'LIVBOJ',
     subtitle: (
       <>
