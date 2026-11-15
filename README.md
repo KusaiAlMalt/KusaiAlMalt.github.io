@@ -1,4 +1,6 @@
 # KusaiAlMalt.github.io
-Welcome to my Portfolio
+Welcome to my Portfolio.
 
-*Site is under construction ...*
+Built using React+Vite.
+
+Please visit at https://kusaialmalt.github.io/
