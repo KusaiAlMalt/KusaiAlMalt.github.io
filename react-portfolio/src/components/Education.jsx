@@ -3,6 +3,13 @@ const education = [
     name: 'Chalmers University of Technology',
     logo: '/assets/icons/chalmers.svg',
     url: 'https://www.chalmers.se/',
+    degree: 'Master of Science, Computer Systems and Cybersecurity',
+    dates: 'August 2026 - June 2028',
+  },
+  {
+    name: 'Chalmers University of Technology',
+    logo: '/assets/icons/chalmers.svg',
+    url: 'https://www.chalmers.se/',
     degree: 'Bachelor of Science, Information Technology',
     dates: 'August 2023 - June 2026',
   },
@@ -23,7 +30,7 @@ function Education() {
             <h2>{item.name}</h2>
             <hr />
             <a href={item.url} target="_blank" rel="noreferrer">
-              <p>{item.degree}</p>
+              <p><b>{item.degree}</b></p>
             </a>
             <p>{item.dates}</p>
           </article>
